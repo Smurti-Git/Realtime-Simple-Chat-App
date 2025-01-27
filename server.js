@@ -1,16 +1,12 @@
 const express = require('express');
 const socketIO = require('socket.io');
 const http = require('http');
-const path = require('path'); // Add this line
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const port = process.env.PORT || 3000;
-
-// Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public'))); // Add this line
+const port = process.env.PORT || 3000;  // Vercel assigns the port via process.env.PORT
 
 const users = {};
 
