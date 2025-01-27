@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000')
+new  const socket = io('https://real-time-chart-app.vercel.app/')
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
@@ -11,7 +11,7 @@ socket.on('chat-message', data => {
   appendMessage(`${data.name}: ${data.message}`)
 })
 
-socket.on('user-connected', name => {
+socket.on('user-connected', name => {ś
   appendMessage(`${name} connected`)
 })
 
