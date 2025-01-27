@@ -1,7 +1,10 @@
-{
+
+
+  {
   "name": "current-project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js"
@@ -9,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^2.5.1"
+    "express": "^4.17.1",
+    "socket.io": "^2.5.1",
+    "http": "^0.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
