@@ -1,4 +1,4 @@
-new  const socket = io('https://realtime-simple-chat-app-w6vi.vercel.app/')
+const socket = io('https://realtime-simple-chat-app-w6vi.vercel.app/')
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
@@ -32,4 +32,4 @@ function appendMessage(message) {
   messageElement.innerText = message
   messageContainer.append(messageElement)
 }
-vercel --prod
+
